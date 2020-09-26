@@ -1,0 +1,26 @@
+<header>
+  <div class="menu-button">
+    <a (click)="togglemenuService.setSideBarToggle(true)">
+      <span></span>
+      <span></span> 
+      <span></span>
+    </a> 
+    <span class="notification-count">12</span>
+  </div>
+  <h1 class="page-title">Page title</h1>
+  <div>
+    <a routerLink="/home/cart" routerLinkActive="active" href="javascript:void(0);" class="notify-button">
+      <svg class="icon size-25 icon-white">
+        <use xlink:href="../assets/icons/svg-sprite.svg#bucket"></use>
+      </svg>
+      <span class="notification-count">4</span>
+    </a>
+    <a routerLink="/dashboard/notification" routerLinkActive="active" href="javascript:void(0);" class="notify-button">
+      <svg class="icon size-25 icon-white">
+        <use xlink:href="../assets/icons/svg-sprite.svg#notification"></use>
+      </svg>
+      <span class="notification-count">12</span>
+    </a>
+  </div>
+
+</header> 

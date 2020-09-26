@@ -1,0 +1,11 @@
+$blue: #072366;
+$light-blue: lighten(adjust-hue($blue, -5), 2.75);
+$link-color: lighten(desaturate(adjust-hue($blue, -5), 23.9), 14.51);
+$main-bg-color: #f8f9fe;
+$red: #6785ff;
+$white: white;
+$black: black;
+$font-lato: "Lato", sans-serif;
+$star-active: #ffd055;
+$star-inactive: #d8d8d8;
+$sidebar-width: 225px; 

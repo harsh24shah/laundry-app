@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+/* For use in src/lib/core/theming/_palette.scss */
+$md-primary: (50 : #e1e5ed,
+    100 : #b5bdd1,
+    200 : #8391b3,
+    300 : #516594,
+    400 : #2c447d,
+    500 : #072366,
+    600 : #061f5e,
+    700 : #051a53,
+    800 : #041549,
+    900 : #020c38,
+    A100 : #6e7dff,
+    A200 : #3b4fff,
+    A400 : #0821ff,
+    A700 : #0018ee,
+    contrast: (50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #ffffff,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    ));
+
+$md-accent: (50 : #edf0ff,
+    100 : #d1daff,
+    200 : #b3c2ff,
+    300 : #95aaff,
+    400 : #7e97ff,
+    500 : #6785ff,
+    600 : #5f7dff,
+    700 : #5472ff,
+    800 : #4a68ff,
+    900 : #3955ff,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #e2e6ff,
+    A700 : #c9d0ff,
+    contrast: (50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    ));
+
+// $app-primary: mat-palette($mat-indigo);
+// $app-accent: mat-palette($mat-pink, A200, A100, A400);
+
+$app-primary: mat-palette($md-primary);
+$app-accent: mat-palette($md-accent, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$app-warn: mat-palette($mat-red);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$app-theme: mat-light-theme((color: (primary: $app-primary,
+            accent: $app-accent,
+            warn: $app-warn,
+        )));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($app-theme);
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Lato, "Roboto", "Helvetica Neue", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.mat-body,
+.mat-typography {
+    p {
+        line-height: 24px;
+    }
+}
+
+/*---Custom tab---*/
+.tab-with-icon {
+    .mat-tab-label {
+        margin-bottom: 8px;
+
+        .mat-tab-label-content {
+            flex-direction: column;
+        }
+    }
+}
+
+.mobile-fixed {
+    .mat-tab-header {
+        @media (max-width: 767px) {
+            position: fixed !important;
+            width: 100%;
+            left: 0;
+            margin: 0;
+            bottom: 0;
+            z-index: 2;
+
+            .mat-tab-labels {
+                justify-content: center !important;
+            }
+        }
+    }
+}
+
+
+.mat-tab-label {
+
+    @media (max-width: 767px) {
+        background: white;
+        opacity: 1;
+    }
+}
+
+/*---Custom list---*/
+.mat-list-base {
+
+    .mat-list-item,
+    .mat-list-option {
+        min-height: 56px;
+        padding: 15px 0 !important;
+        height: auto !important;
+    }
+}
+
+.about-wrapper {
+    p {
+        margin-bottom: 0;
+    }
+
+    .about-custom-grid {
+        .mat-list-item-content {
+            flex-wrap: wrap;
+            margin: -10px 0;
+            align-items: flex-end !important;
+            border-bottom: 1px solid #dadada;
+
+            .highlights {
+                flex: 0 0 25%;
+                padding: 12px 0;
+                margin-bottom: 0;
+
+                // &:nth-child(-n + 6) {
+                //     border-top: 1px solid #dadada;
+                // }
+
+                // &:not(:nth-of-type(2n + 1)) {
+                //     border-left: 1px solid #dadada;
+                // }
+
+                // &:nth-of-type(4n + 1) {
+                //     border-left: 1px solid #dadada;
+                // }
+
+                @media (max-width: 767px) {
+                    flex: 0 0 33.33%;
+
+                    // &:nth-child(-n + 6) {
+                    //     border-top: 0;
+                    // }
+
+                    // &:not(:nth-of-type(2n + 1)) {
+                    //     border-left: 0;
+                    // }
+
+                    // &:nth-of-type(4n + 1) {
+                    //     border-left: 0;
+                    // }
+                }
+
+                @media (max-width: 450px) {
+                    flex: 0 0 50%;
+                }
+            }
+        }
+    }
+
+    .mat-list-item {
+        &.equal-width-devider {
+            .mat-list-item-content {
+                display: flex;
+                flex-wrap: wrap;
+
+                .highlights {
+                    flex: 1 1;
+
+                    @media (max-width: 450px) {
+                        flex: 0 0 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+form {
+    .mat-list-base {
+
+        .mat-list-item,
+        .mat-list-option {
+            padding: 6px 0 !important;
+        }
+    }
+}
+
+.notification-wrapper {
+    @media (max-width: 767px) {
+        .mat-list-item {
+            margin-bottom: 13px;
+            border: 1px solid #dadada;
+            border-radius: 8px;
+        }
+
+        .mat-divider {
+            display: none !important;
+        }
+    }
+}
+
+/*----radio button---*/
+.mat-radio-group {
+    label {
+        margin-right: 10px;
+        font-size: 14px;
+        font-weight: 500 !important;
+    }
+}
+
+.mat-radio-container {
+    width: 16px !important;
+    height: 16px !important;
+
+    .mat-radio-outer-circle {
+        width: 16px;
+        height: 16px;
+        box-shadow: inset 0 0 3px 0px rgba(black, 0.15);
+        border-color: rgba(black, 0.14);
+    }
+
+    .mat-radio-inner-circle {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+    }
+}
+
+.mat-radio-checked .mat-radio-inner-circle {
+    transform: scale(0.9) !important;
+}
+
+/*-----From field select-----*/
+
+.mat-form-field-wrapper {
+    padding-bottom: 0;
+}
+
+.mat-form-field {
+    width: 100%;
+    max-width: 400px;
+}
+
+.mat-select {
+    border: 1px solid #dadada;
+    background-color: white;
+    padding: 8px 8px 8px 12px;
+    min-width: unset;
+    max-width: 400px;
+    border-radius: 2px;
+    margin-bottom: 6px;
+}
+
+.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding-bottom: 0 !important;
+}
+
+.mat-form-field-appearance-fill .mat-form-field-flex,
+.mat-form-field-infix {
+    border: 0 !important;
+    padding: 0 !important;
+    background-color: transparent !important;
+    width: 100% !important;
+}
+
+.mat-form-field-appearance-fill .mat-select-arrow-wrapper {
+    transform: translateY(0) !important;
+}
+
+.mat-form-field-underline {
+    display: none;
+}
+
+/*----- Form field chip----*/
+.mat-chip {
+    &.mat-standard-chip {
+        padding: 0px 12px;
+        border-radius: 4px;
+        min-height: 19px;
+        font-size: 12px;
+        background: $light-blue;
+        color: white;
+
+        &.mat-chip-with-trailing-icon {
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-right: 12px;
+            padding-left: 12px;
+        }
+    }
+}
+
+
+/*-- Date picker--*/
+input.mat-input-element {
+    height: 36px;
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #dadada;
+    outline: none;
+    border-radius: 2px;
+    margin-top: 0;
+}

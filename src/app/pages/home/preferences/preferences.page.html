@@ -1,0 +1,156 @@
+<div class="d-flex text-center service-type-buttons">
+  <mat-button-toggle-group name="fontStyle" aria-label="Font Style">
+    <mat-button-toggle value="standard" selected="selected">Standard</mat-button-toggle>
+    <mat-button-toggle value="on-demand">On Demand</mat-button-toggle>
+  </mat-button-toggle-group>
+</div>
+
+<div class="payment-wrapper">
+  <div class="row">
+    <div class="column">
+      <label>Address:</label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <div class="card payment-card">
+        <div class="card-header">Pick up</div>
+        <div class="card-body w-100">
+          <div class="address">
+            <div class="address-inline">
+              <svg class="icon size-20 icon-black">
+                <use xlink:href="../assets/icons/svg-sprite.svg#location"></use>
+              </svg>
+              <span class="strong text-blue">B-23 House Name, Society name, landmark title, City name, State,
+                390025</span>
+            </div>
+            <span>
+              <a href="javascript:void(0);">Change</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="card-header">Delivery</div>
+        <div class="card-body w-100">
+          <div class="address">
+            <div class="address-inline">
+              <svg class="icon size-20 icon-black">
+                <use xlink:href="../assets/icons/svg-sprite.svg#location"></use>
+              </svg>
+              <span class="strong text-blue">B-23 House Name, Society name, landmark title, City name, State,
+                390025</span>
+            </div>
+            <span>
+              <a href="javascript:void(0);">Change</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: 20px;">
+    <div class="column">
+      <label>Date & Time:</label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <div class="card payment-card">
+        <div class="card-header">Pick up</div>
+        <div class="card-body w-100">
+          <div class="address">
+            <div class="address-inline align-items-center">
+              <mat-icon>event</mat-icon>
+              <mat-form-field appearance="fill">
+                <input class="strong text-blue" matInput [matDatepicker]="picker">
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+            </div>
+            <span>
+             
+              <a href="javascript:void(0);" (click)="picker.open()">Change</a>
+            </span>
+          </div>
+          <hr />
+          <div class="address">
+            <div class="address-inline align-items-center">
+              <mat-icon>schedule</mat-icon>
+              <span class="strong text-blue">12:00 PM</span>
+            </div>
+            <span>
+              <a href="javascript:void(0);">Change</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card payment-card">
+        <div class="card-header">Pick up</div>
+        <div class="card-body w-100">
+          <div class="address">
+            <div class="address-inline align-items-center">
+              <mat-icon>event</mat-icon>
+              <span class="strong text-blue">02/08/2020</span>
+            </div>
+            <span>
+              <a href="javascript:void(0);">Change</a>
+            </span>
+          </div>
+          <hr />
+          <div class="address">
+            <div class="address-inline align-items-center">
+              <mat-icon>schedule</mat-icon>
+              <span class="strong text-blue">12:00 PM</span>
+            </div>
+            <span>
+              <a href="javascript:void(0);">Change</a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: 20px;">
+    <div class="column">
+      <label>Pickup-Delivery Note:</label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <div class="address">
+        <textarea rows="4" class="rugby-input" placeholder="Write a note"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: 20px;">
+    <div class="column">
+      <label>Payment:</label>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <mat-form-field appearance="fill">
+        <mat-select [(ngModel)]="selected" placeholder="Select Payment method">
+          <mat-option *ngFor="let category of categories" [value]="category.value">
+            {{category.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+</div>
+
+<div class="floating-button right">
+  <button mat-raised-button color="primary" routerLink="/home/cart" >Confirm (₹400) &gt;</button>
+</div>

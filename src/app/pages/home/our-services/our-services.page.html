@@ -1,0 +1,293 @@
+<div class="d-flex text-center service-type-buttons">
+  <mat-form-field appearance="fill">
+    <mat-select [(ngModel)]="selected" placeholder="Service Category">
+      <mat-option *ngFor="let category of categories" [value]="category.value">
+        {{category.viewValue}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+
+<mat-tab-group mat-stretch-tabs class="tab-with-icon mobile-fixed" mat-align-tabs="center" >
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <svg class="icon size-30 icon-black">
+        <use xlink:href="../assets/icons/svg-sprite.svg#tshirt"></use>
+      </svg> 
+      Tops
+    </ng-template>
+    <div class="tab-content-wrap card"> 
+      <div class="list-view-wrapper">
+        <mat-list>
+          <mat-list-item>
+            <a href="javascript:void(0);" class="playerlist-item">
+              <div>
+                <svg class="icon size-30 icon-black">
+                  <use xlink:href="../assets/icons/svg-sprite.svg#tshirt"></use>
+                </svg> 
+                <div>
+                  <span class="strong text-blue item-title">Tshirt</span> <span class="text-grey block item-subtitle">men/women tshirts</span>
+                </div>
+              </div>
+              <div class="text-grey text-right">
+                <div class="updated-price">
+                  ₹100
+                 </div>
+                <div class="quantity-input">
+                  <button type="button" class="outline icon-btn">-</button>
+                  <input type="text" class="price-input" value="2" readonly />
+                  <button type="button" class="outline icon-btn">+</button>
+                </div>
+              </div>
+            </a>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <a href="javascript:void(0);" class="playerlist-item">
+              <div>
+                <svg class="icon size-30 icon-black">
+                  <use xlink:href="../assets/icons/svg-sprite.svg#tshirt"></use>
+                </svg> 
+                <div>
+                  <span class="strong text-blue item-title">V-neck Tshirt</span> <span class="text-grey block item-subtitle">men/women tshirts</span>
+                </div>
+              </div>
+              <div class="text-grey text-right">
+                <div class="updated-price">
+                  ₹100
+                 </div>
+                <div class="quantity-input">
+                  <button type="button" class="outline icon-btn">-</button>
+                  <input type="text" class="price-input" value="2" readonly />
+                  <button type="button" class="outline icon-btn">+</button>
+                </div>
+              </div>
+            </a>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <a href="javascript:void(0);" class="playerlist-item">
+              <div>
+                <svg class="icon size-30 icon-black">
+                  <use xlink:href="../assets/icons/svg-sprite.svg#tshirt"></use>
+                </svg> 
+                <div>
+                  <span class="strong text-blue item-title">Shirt casual</span> <span class="text-grey block item-subtitle">men/women tshirts</span>
+                </div>
+              </div>
+              <div class="text-grey text-right">
+                <div class="updated-price">
+                  ₹100
+                 </div>
+                <div class="quantity-input">
+                  <button type="button" class="outline icon-btn">-</button>
+                  <input type="text" class="price-input" value="2" readonly />
+                  <button type="button" class="outline icon-btn">+</button>
+                </div>
+              </div>
+            </a>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <a href="javascript:void(0);" class="playerlist-item">
+              <div>
+                <svg class="icon size-30 icon-black">
+                  <use xlink:href="../assets/icons/svg-sprite.svg#tshirt"></use>
+                </svg> 
+                <div>
+                  <span class="strong text-blue item-title">Shirt Formal</span> <span class="text-grey block item-subtitle">men/women tshirts</span>
+                </div>
+              </div>
+              <div class="text-grey text-right">
+                <div class="updated-price">
+                  ₹100
+                 </div>
+                <div class="quantity-input">
+                  <button type="button" class="outline icon-btn">-</button>
+                  <input type="text" class="price-input" value="2" readonly />
+                  <button type="button" class="outline icon-btn">+</button>
+                </div>
+              </div>
+            </a>
+          </mat-list-item>
+          </mat-list>
+          </div>
+      </div>
+    
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <svg class="icon size-30 icon-black">
+        <use xlink:href="../assets/icons/svg-sprite.svg#jeans"></use>
+      </svg> 
+      Bottoms
+    </ng-template>
+    <div class="tab-content-wrap card"> 
+      <div class="list-view-wrapper">
+        <mat-list>
+          <mat-list-item>
+            <a href="javascript:void(0);" class="playerlist-item">
+              <div>
+                <svg class="icon size-30 icon-black">
+                  <use xlink:href="../assets/icons/svg-sprite.svg#jeans"></use>
+                </svg> 
+                <div>
+                  <span class="strong text-blue item-title">Tshirt</span> <span class="text-grey block item-subtitle">men/women tshirts</span>
+                </div>
+              </div>
+              <div class="text-grey text-right">
+                <div class="updated-price">
+                  ₹100
+                 </div>
+                <div class="quantity-input">
+                  <button type="button" class="outline icon-btn">-</button>
+                  <input type="text" class="price-input" value="2" readonly />
+                  <button type="button" class="outline icon-btn">+</button>
+                </div>
+              </div>
+            </a>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <a href="javascript:void(0);" class="playerlist-item">
+              <div>
+                <svg class="icon size-30 icon-black">
+                  <use xlink:href="../assets/icons/svg-sprite.svg#jeans"></use>
+                </svg> 
+                <div>
+                  <span class="strong text-blue item-title">V-neck Tshirt</span> <span class="text-grey block item-subtitle">men/women tshirts</span>
+                </div>
+              </div>
+              <div class="text-grey text-right">
+                <div class="updated-price">
+                  ₹100
+                 </div>
+                <div class="quantity-input">
+                  <button type="button" class="outline icon-btn">-</button>
+                  <input type="text" class="price-input" value="2" readonly />
+                  <button type="button" class="outline icon-btn">+</button>
+                </div>
+              </div>
+            </a>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <a href="javascript:void(0);" class="playerlist-item">
+              <div>
+                <svg class="icon size-30 icon-black">
+                  <use xlink:href="../assets/icons/svg-sprite.svg#jeans"></use>
+                </svg> 
+                <div>
+                  <span class="strong text-blue item-title">Shirt casual</span> <span class="text-grey block item-subtitle">men/women tshirts</span>
+                </div>
+              </div>
+              <div class="text-grey text-right">
+                <div class="updated-price">
+                  ₹100
+                 </div>
+                <div class="quantity-input">
+                  <button type="button" class="outline icon-btn">-</button>
+                  <input type="text" class="price-input" value="2" readonly />
+                  <button type="button" class="outline icon-btn">+</button>
+                </div>
+              </div>
+            </a>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <mat-list-item>
+            <a href="javascript:void(0);" class="playerlist-item">
+              <div>
+                <svg class="icon size-30 icon-black">
+                  <use xlink:href="../assets/icons/svg-sprite.svg#jeans"></use>
+                </svg> 
+                <div>
+                  <span class="strong text-blue item-title">Shirt Formal</span> <span class="text-grey block item-subtitle">men/women tshirts</span>
+                </div>
+              </div>
+              <div class="text-grey text-right">
+                <div class="updated-price">
+                  ₹100
+                 </div>
+                <div class="quantity-input">
+                  <button type="button" class="outline icon-btn">-</button>
+                  <input type="text" class="price-input" value="2" readonly />
+                  <button type="button" class="outline icon-btn">+</button>
+                </div>
+              </div>
+            </a>
+          </mat-list-item>
+          </mat-list>
+          </div>
+      </div>
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <svg class="icon size-30 icon-black">
+        <use xlink:href="../assets/icons/svg-sprite.svg#dress"></use>
+      </svg> 
+      Dress
+    </ng-template>
+    Content 1
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <svg class="icon size-30 icon-black">
+        <use xlink:href="../assets/icons/svg-sprite.svg#suit"></use>
+      </svg> 
+      Suits
+    </ng-template>
+    Content 1
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <svg class="icon size-30 icon-black">
+        <use xlink:href="../assets/icons/svg-sprite.svg#hoodie"></use>
+      </svg> 
+      Knitewear
+    </ng-template>
+    Content 1
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <svg class="icon size-30 icon-black">
+        <use xlink:href="../assets/icons/svg-sprite.svg#tie"></use>
+      </svg> 
+      Accessories
+    </ng-template>
+    Content 1
+  </mat-tab>
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <svg class="icon size-30 icon-black">
+        <use xlink:href="../assets/icons/svg-sprite.svg#poncho"></use>
+      </svg> 
+      Traditional
+    </ng-template>
+    Content 2
+  </mat-tab>
+
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <svg class="icon size-30 icon-black">
+        <use xlink:href="../assets/icons/svg-sprite.svg#bed"></use>
+      </svg> 
+      Household
+    </ng-template>
+
+    Content 3
+  </mat-tab>
+  <mat-tab>
+    <ng-template mat-tab-label>
+      <svg class="icon size-30 icon-black">
+        <use xlink:href="../assets/icons/svg-sprite.svg#teddy-bear"></use>
+      </svg> 
+      Other
+    </ng-template>
+
+    Content 3
+  </mat-tab>
+</mat-tab-group>
+<div class="floating-button right">
+  <button mat-raised-button color="primary" routerLink="/home/preferences" >Prefrence (₹400) &gt;</button>
+</div>

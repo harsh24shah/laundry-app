@@ -1,0 +1,14 @@
+<ion-app>
+  <div class="dashboard-wrapper">
+    <div class="left-section" [class.active]="togglemenuService.sidenav$ | async">
+      <app-sidemenu></app-sidemenu>
+    </div>
+    <div class="right-section">
+      <div class="menu-overlay" [class.active]="togglemenuService.sidenav$ | async" (click)="togglemenuService.setSideBarToggle(false)">&nbsp;</div>
+      <app-header></app-header>
+      <main>
+        <router-outlet></router-outlet>
+      </main>
+    </div>
+  </div>  
+</ion-app>

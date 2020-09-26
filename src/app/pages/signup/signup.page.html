@@ -1,0 +1,42 @@
+<div class="login-wrapper" style="background:linear-gradient(rgba(73, 83, 206, .9), rgba(0, 43, 84, .9)), url('../../assets/images/hero.png') center center / cover; justify-content: flex-start;">
+  <div class="login-form">
+    <div class="image-wrapper"><img src="../../assets/images/dhulaiwala-squre.png" /></div>
+    <form>
+      <div class="form-group">
+        <label for="firstname">Register As</label>
+        <mat-radio-group aria-label="Select an option">
+          <mat-radio-button value="admin">Admin</mat-radio-button>
+          <mat-radio-button value="user">User</mat-radio-button>
+        </mat-radio-group>
+      </div>
+      <div class="form-group">
+        <label for="firstname">Full Name</label>
+        <input id="firstname" type="text" name="firstname" />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" />
+      </div>
+      <div class="form-group">
+        <label for="number">Phone Number</label>
+        <input id="number" type="text" name="phonenumber" />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password" />
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input id="confirm-password" type="password" name="confirm-password" />
+      </div>
+      <div class="text-center small strong i-agree">    
+          <mat-checkbox [color]="'primary'">I agree to <a href="javascript:void(0);" class="text-red">terms of use</a></mat-checkbox>
+      </div>
+      <button type="submit">Create Account</button>   
+      <div class="text-center small">
+        <span class="text-blue strong block">Already have an account?</span>
+        <span class="strong"><a routerLink="/login" class="text-red">Login</a></span>
+      </div>
+    </form>
+  </div>
+</div>
