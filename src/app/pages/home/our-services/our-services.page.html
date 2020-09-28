@@ -1,14 +1,4 @@
-<div class="d-flex text-center service-type-buttons">
-  <mat-form-field appearance="fill">
-    <mat-select [(ngModel)]="selected" placeholder="Service Category">
-      <mat-option *ngFor="let category of categories" [value]="category.value">
-        {{category.viewValue}}
-      </mat-option>
-    </mat-select>
-  </mat-form-field>
-</div>
-
-<mat-tab-group mat-stretch-tabs class="tab-with-icon mobile-fixed" mat-align-tabs="center" >
+<mat-tab-group mat-stretch-tabs class="tab-with-icon" mat-align-tabs="center" >
   <mat-tab>
     <ng-template mat-tab-label>
       <svg class="icon size-30 icon-black">

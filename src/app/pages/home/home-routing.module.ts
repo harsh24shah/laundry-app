@@ -9,27 +9,36 @@ const routes: Routes = [
     children: [
       {
         path: 'our-services',
-        loadChildren: () => import('./our-services/our-services.module').then( m => m.OurServicesPageModule)
+        loadChildren: () => import('./our-services/our-services.module').then(m => m.OurServicesPageModule)
       },
       {
         path: 'preferences',
-        loadChildren: () => import('./preferences/preferences.module').then( m => m.PreferencesPageModule)
+        loadChildren: () => import('./preferences/preferences.module').then(m => m.PreferencesPageModule)
       },
       {
         path: 'cart',
-        loadChildren: () => import('./cart/cart.module').then( m => m.CartPageModule)
+        loadChildren: () => import('./cart/cart.module').then(m => m.CartPageModule)
+      },
+      {
+        path: 'categories',
+        loadChildren: () => import('./categories/categories.module').then(m => m.CategoriesPageModule)
+      },
+      {
+        path: 'profile',
+        loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
       },
       {
         path: '',
         pathMatch: 'full',
-        redirectTo: '/home/our-services'
+        redirectTo: '/home/categories'
       }
     ]
   }
+ 
 ]
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class HomePageRoutingModule {}
+export class HomePageRoutingModule { }

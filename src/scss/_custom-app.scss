@@ -165,7 +165,7 @@ form {
   }
 
   .card-body {
-    padding: 16px 16px 25px 16px;
+    padding: 16px;
     display: inline-flex;
     flex-direction: column;
     border: 1px solid #dadada;
@@ -349,12 +349,18 @@ button,
 
 .floating-button {
   position: fixed;
-  bottom: 40px;
+  bottom: 0;
   z-index: 1;
-  right: 40px;
+  right: 0;
+  width: calc(100% - #{$sidebar-width});
 
-  @media (max-width:767px) {
-    bottom: 70px;
+  @media(max-width: 767px) {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+    border-radius: 0;
   }
 }
 
@@ -402,7 +408,8 @@ button,
         .profile-image {
           width: 70px;
           height: 70px;
-          display: block;
+          display: inline-block;
+          position: relative;
           margin: 0 10px 0 24px;
         }
       }
@@ -515,6 +522,7 @@ button,
     overflow: auto;
     height: 100vh;
     background: $main-bg-color;
+    position: relative;
 
     @media (max-width: 991px) {
       flex: 0 0 100%;
@@ -538,11 +546,7 @@ button,
     }
 
     main {
-      margin: 35px;
-
-      @media (max-width: 991px) {
-        margin: 20px;
-      }
+      margin: 15px;
 
       .top-social-media {
         @media (max-width: 767px) {
@@ -639,33 +643,6 @@ button,
     .tab-content-wrap {
       min-height: 500px;
 
-      .gallery-wrapper {
-        display: flex;
-        padding: 10px;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-
-        .gallery-image {
-          font-size: 200%;
-          padding: 3mm;
-          flex: 0 1 20%;
-
-          @media (max-width: 767px) {
-            flex: 0 1 33.33%;
-          }
-
-          @media (max-width: 450px) {
-            flex: 0 1 100%;
-          }
-
-          img {
-            width: 100%;
-            float: left;
-            border-radius: 12px;
-          }
-        }
-      }
-
       .video-wrapper,
       .about-wrapper {
         padding: 10px;
@@ -723,10 +700,15 @@ button,
   .rugby-input {
     height: 36px;
     width: 100%;
+    max-width: 400px;
     padding: 8px 12px;
     border: 1px solid #dadada;
     outline: none;
     border-radius: 2px;
+
+    @media(max-width: 767px) {
+      max-width: none;
+    }
 
     &::placeholder,
     &::-moz-placeholder,
@@ -881,6 +863,49 @@ button,
       border-radius: 6px;
       margin-bottom: 8px;
       padding: 4px 10px;
+    }
+  }
+}
+
+.gallery-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .gallery-image {
+    font-size: 200%;
+    padding: 2mm;
+    flex: 0 1 25%;
+    cursor: pointer;
+
+    @media (max-width: 767px) {
+      flex: 0 1 50%;
+    }
+
+    @media (max-width: 450px) {
+      flex: 0 1 100%;
+    }
+
+    span {
+      font-size: 14px;
+      line-height: 18px;
+      margin-top: 10px;
+      display: inline-block;
+      color: #4a4a4a;
+    }
+
+    .category-title {
+      font-size: 20px;
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      color: $blue;
+    }
+
+    img {
+      width: 100%;
+      float: left;
+      border-radius: 12px;
     }
   }
 }
