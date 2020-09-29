@@ -120,6 +120,11 @@ body {
 }
 
 /*---Custom tab---*/
+.mat-tab-label {
+    height: auto !important;
+    min-height: 48px;
+}
+
 .tab-with-icon {
     .mat-tab-label {
         margin-bottom: 8px;

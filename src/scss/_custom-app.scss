@@ -29,6 +29,19 @@ body {
   justify-content: center;
 }
 
+.cart-quantity {
+  position: relative;
+
+  .notification-count {
+    right: 10px;
+    font-size: 12px;
+
+    @media(max-width: 767px) {
+      right: 3px;
+    }
+  }
+}
+
 form {
   .row {
     margin: 0 -10px;
@@ -156,7 +169,7 @@ form {
   background: white;
 
   .card-header {
-    background: $red;
+    background: $blue;
     padding: 10px;
     text-align: center;
     color: white;
@@ -178,6 +191,10 @@ form {
   justify-content: space-between;
   display: flex;
   flex-wrap: nowrap;
+
+  .mat-icon {
+    color: #a2a1a1;
+  }
 
   .address-inline {
     display: flex;
@@ -308,7 +325,7 @@ form {
 
 button,
 .button {
-  background: $red;
+  background: $blue;
   border: 0;
   padding: 7px 25px;
   font-size: 16px;
@@ -354,7 +371,7 @@ button,
   right: 0;
   width: calc(100% - #{$sidebar-width});
 
-  @media(max-width: 767px) {
+  @media(max-width: 991px) {
     width: 100%;
   }
 
