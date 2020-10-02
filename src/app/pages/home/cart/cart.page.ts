@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PageTitleService } from 'src/app/shared/services/pagetitle.service';
 
 @Component({
   selector: 'app-cart',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartPage implements OnInit {
 
-  constructor() { }
+  constructor(private pageTitleService: PageTitleService) { }
 
   ngOnInit() {
+    this.pageTitleService.changeTitlle('Bucket');
   }
 
 }

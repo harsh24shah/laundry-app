@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PageTitleService } from 'src/app/shared/services/pagetitle.service';
 interface Categories {
   value: string;
   viewValue: string;
@@ -22,9 +23,11 @@ export class OurServicesPage implements OnInit {
     {value: 'shoes', viewValue: 'Shoes'},
     {value: 'curtain', viewValue: 'Curtain cleaning'}
   ];
-  constructor() { }
+
+  constructor(private pageTitleService: PageTitleService) { }
 
   ngOnInit() {
+    this.pageTitleService.changeTitlle('Services');
   }
 
 }

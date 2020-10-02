@@ -94,7 +94,7 @@ small,
 }
 
 label {
-  font-weight: bold;
+  font-weight: 500;
   color: $blue;
   margin-bottom: 8px;
   display: block;
@@ -205,6 +205,11 @@ a {
   &.size-16 {
     width: 16px;
     height: 16px;
+  }
+
+  &.size-14 {
+    width: 14px;
+    height: 14px;
   }
 
   &.icon-white {

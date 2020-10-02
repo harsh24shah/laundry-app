@@ -1,184 +1,236 @@
 <mat-tab-group mat-stretch-tabs class="tab-with-icon" mat-align-tabs="center">
   <mat-tab>
     <ng-template mat-tab-label>
-      Current Order
+      Current Orders
     </ng-template>
-    <div class="tab-content-wrap card">
-      <div class="d-flex text-center service-type-buttons" style="padding-top: 16px;">
-        <h1>
-          Dry Cleaning
-        </h1>
-      </div>
+    <div class="tab-content-wrap card" style="padding: 8px;">
+      <mat-accordion class="order-accordian">
+        <mat-expansion-panel [expanded]="true">
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              <div class="order-header">
+                <div>
+                  Order Booked #289348094
+                </div>
+                <div class="order-header-inner">
 
-      <div class="timeline">
-        <div class="timeline-item yes">
-          <div>Scheduled</div>
-          <div class="round">
-            <mat-icon>check</mat-icon>
-          </div>
-        </div>
-        <div class="timeline-item yes">
-          <div>Collected</div>
-          <div class="round">
-            <mat-icon>check</mat-icon>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div>Cleaning</div>
-          <div class="round">
-            <mat-icon>check</mat-icon>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div>Delivered</div>
-          <div class="round">
-            <mat-icon>check</mat-icon>
-          </div>
-        </div>
-      </div>
-
-      <div class="tab-content-wrap card">
-        <div class="list-view-wrapper">
-          <mat-list>
-            <mat-list-item>
-              <a href="javascript:void(0);" class="playerlist-item">
-                <div>
-                  <div class="cart-quantity">
-                    <svg class="icon size-30 icon-black">
-                      <use xlink:href="../assets/icons/svg-sprite.svg#tshirt"></use>
-                    </svg>
-                    <span _ngcontent-efu-c377="" class="notification-count">3</span>
-                  </div>
-                  <div>
-                    <span class="strong text-blue item-title">Tshirt</span> <span
-                      class="text-grey block item-subtitle">men/women
-                      tshirts</span>
-                  </div>
-                </div>
-                <div class="text-grey text-right">
-                  <div class="updated-price">
-                    <span class="text-blue">₹100</span>
-                  </div>
-                  <a href="Edit">Edit</a>
-                </div>
-              </a>
-            </mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>
-              <a href="javascript:void(0);" class="playerlist-item">
-                <div>
-                  <div class="cart-quantity">
-                    <svg class="icon size-30 icon-black">
-                      <use xlink:href="../assets/icons/svg-sprite.svg#tshirt"></use>
-                    </svg>
-                    <span _ngcontent-efu-c377="" class="notification-count">3</span>
-                  </div>
-                  <div>
-                    <span class="strong text-blue item-title">Tshirt</span> <span
-                      class="text-grey block item-subtitle">men/women
-                      tshirts</span>
-                  </div>
-                </div>
-                <div class="text-grey text-right">
-                  <div class="updated-price">
-                    <span class="text-blue">₹100</span>
-                  </div>
-                  <a href="Edit">Edit</a>
-                </div>
-              </a>
-            </mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>
-              <a href="javascript:void(0);" class="playerlist-item">
-                <div>
-                  <div class="cart-quantity">
-                    <svg class="icon size-30 icon-black">
-                      <use xlink:href="../assets/icons/svg-sprite.svg#tshirt"></use>
-                    </svg>
-                    <span _ngcontent-efu-c377="" class="notification-count">3</span>
-                  </div>
-                  <div>
-                    <span class="strong text-blue item-title">Tshirt</span> <span
-                      class="text-grey block item-subtitle">men/women
-                      tshirts</span>
-                  </div>
-                </div>
-                <div class="text-grey text-right">
-                  <div class="updated-price">
-                    <span class="text-blue">₹100</span>
-                  </div>
-                  <a href="Edit">Edit</a>
-                </div>
-              </a>
-            </mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>
-              <a href="javascript:void(0);" class="playerlist-item">
-                <div>
-                  <div class="cart-quantity">
-                    <svg class="icon size-30 icon-black">
-                      <use xlink:href="../assets/icons/svg-sprite.svg#tshirt"></use>
-                    </svg>
-                    <span _ngcontent-efu-c377="" class="notification-count">3</span>
-                  </div>
-                  <div>
-                    <span class="strong text-blue item-title">Tshirt</span> <span
-                      class="text-grey block item-subtitle">men/women
-                      tshirts</span>
-                  </div>
-                </div>
-                <div class="text-grey text-right">
-                  <div class="updated-price">
-                    <span class="text-blue">₹100</span>
-                  </div>
-                  <a href="Edit">Edit</a>
-                </div>
-              </a>
-            </mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>
-              <a href="javascript:void(0);" class="playerlist-item">
-                <div>
-                  <div class="cart-quantity">
-                    <svg class="icon size-30 icon-black">
-                      <use xlink:href="../assets/icons/svg-sprite.svg#tshirt"></use>
-                    </svg>
-                    <span _ngcontent-efu-c377="" class="notification-count">3</span>
-                  </div>
-                  <div>
-                    <span class="strong text-blue item-title">Tshirt</span> <span
-                      class="text-grey block item-subtitle">men/women
-                      tshirts</span>
-                  </div>
-                </div>
-                <div class="text-grey text-right">
-                  <div class="updated-price">
-                    <span class="text-blue">₹100</span>
-                  </div>
-                  <a href="Edit">Edit</a>
-                </div>
-              </a>
-            </mat-list-item>
-            <mat-divider></mat-divider>
-            <mat-list-item>
-              <div href="javascript:void(0);" class="playerlist-item">
-                <div>
-                  Total
-                </div>
-                <div class="text-grey text-right">
-                  <div class="text-grey text-right">
-                    <div class="total-price">
-                      <span class="text-blue"><strong>₹400</strong></span>
-                      <mat-icon>info</mat-icon>
+                  <div class="order-time">
+                    <span>
+                      <svg class="icon size-30 icon-black">
+                        <use xlink:href="../assets/icons/svg-sprite.svg#pickup"></use>
+                      </svg>
+                    </span>
+                    <div>
+                      <span>Pickup</span>
+                      <span>9 - 10 PM</span>
+                      <span>09/08/2020</span>
                     </div>
+
+                  </div>
+                  <div class="order-time">
+                    <span>
+                      <svg class="icon size-30 icon-black">
+                        <use xlink:href="../assets/icons/svg-sprite.svg#pickup"></use>
+                      </svg>
+                    </span>
+                    <div>
+                      <span>Delivery</span>
+                      <span>2 - 3 PM</span>
+                      <span>11/08/2020</span>
+                    </div>
+
                   </div>
                 </div>
               </div>
-            </mat-list-item>
+            </mat-panel-title>
+          </mat-expansion-panel-header>
 
-          </mat-list>
-        </div>
-      </div>
+
+
+
+          <div class="d-flex text-center service-type-buttons" style="padding-top: 16px;">
+            <h1>
+              Dry Cleaning
+            </h1>
+          </div>
+
+          <div class="timeline">
+            <div class="timeline-item yes">
+              <div>Scheduled</div>
+              <div class="round">
+                <mat-icon>check</mat-icon>
+              </div>
+            </div>
+            <div class="timeline-item yes">
+              <div>Collected</div>
+              <div class="round">
+                <mat-icon>check</mat-icon>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div>Cleaning</div>
+              <div class="round">
+                <mat-icon>check</mat-icon>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div>Delivered</div>
+              <div class="round">
+                <mat-icon>check</mat-icon>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-content-wrap card">
+            <div class="list-view-wrapper">
+              <mat-list>
+                <mat-list-item>
+                  <a href="javascript:void(0);" class="playerlist-item">
+                    <div>
+                      <div class="cart-quantity">
+                        <svg class="icon size-30 icon-black">
+                          <use xlink:href="../assets/icons/svg-sprite.svg#tshirt"></use>
+                        </svg>
+                        <span _ngcontent-efu-c377="" class="notification-count">3</span>
+                      </div>
+                      <div>
+                        <span class="strong text-blue item-title">Tshirt</span> <span
+                          class="text-grey block item-subtitle">men/women
+                          tshirts</span>
+                      </div>
+                    </div>
+                    <div class="text-grey text-right">
+                      <div class="updated-price">
+                        <span class="text-blue">₹10</span>
+                      </div>
+                      <a href="Edit">
+                        <mat-icon>edit</mat-icon>
+                      </a>
+                    </div>
+                  </a>
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item>
+                  <a href="javascript:void(0);" class="playerlist-item">
+                    <div>
+                      <div class="cart-quantity">
+                        <svg class="icon size-30 icon-black">
+                          <use xlink:href="../assets/icons/svg-sprite.svg#teddy-bear"></use>
+                        </svg>
+                        <span _ngcontent-efu-c377="" class="notification-count">3</span>
+                      </div>
+                      <div>
+                        <span class="strong text-blue item-title">Toy</span> <span
+                          class="text-grey block item-subtitle">Monkey Toy</span>
+                      </div>
+                    </div>
+                    <div class="text-grey text-right">
+                      <div class="updated-price">
+                        <span class="text-blue">₹50</span>
+                      </div>
+                      <a href="Edit">
+                        <mat-icon>edit</mat-icon>
+                      </a>
+                    </div>
+                  </a>
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item>
+                  <a href="javascript:void(0);" class="playerlist-item">
+                    <div>
+                      <div class="cart-quantity">
+                        <svg class="icon size-30 icon-black">
+                          <use xlink:href="../assets/icons/svg-sprite.svg#poncho"></use>
+                        </svg>
+                        <span _ngcontent-efu-c377="" class="notification-count">3</span>
+                      </div>
+                      <div>
+                        <span class="strong text-blue item-title">Lahengas</span> <span
+                          class="text-grey block item-subtitle">women Traditional</span>
+                      </div>
+                    </div>
+                    <div class="text-grey text-right">
+                      <div class="updated-price">
+                        <span class="text-blue">₹50</span>
+                      </div>
+                      <a href="Edit">
+                        <mat-icon>edit</mat-icon>
+                      </a>
+                    </div>
+                  </a>
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item>
+                  <a href="javascript:void(0);" class="playerlist-item">
+                    <div>
+                      <div class="cart-quantity">
+                        <svg class="icon size-30 icon-black">
+                          <use xlink:href="../assets/icons/svg-sprite.svg#bed"></use>
+                        </svg>
+                        <span _ngcontent-efu-c377="" class="notification-count">3</span>
+                      </div>
+                      <div>
+                        <span class="strong text-blue item-title">Pillow Cover</span> <span
+                          class="text-grey block item-subtitle">Furniture Washing clothes</span>
+                      </div>
+                    </div>
+                    <div class="text-grey text-right">
+                      <div class="updated-price">
+                        <span class="text-blue">₹10</span>
+                      </div>
+                      <a href="Edit">
+                        <mat-icon>edit</mat-icon>
+                      </a>
+                    </div>
+                  </a>
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item>
+                  <a href="javascript:void(0);" class="playerlist-item">
+                    <div>
+                      <div class="cart-quantity">
+                        <svg class="icon size-30 icon-black">
+                          <use xlink:href="../assets/icons/svg-sprite.svg#tie"></use>
+                        </svg>
+                        <span _ngcontent-efu-c377="" class="notification-count">3</span>
+                      </div>
+                      <div>
+                        <span class="strong text-blue item-title">Tie</span> <span
+                          class="text-grey block item-subtitle">men Accesories</span>
+                      </div>
+                    </div>
+                    <div class="text-grey text-right">
+                      <div class="updated-price">
+                        <span class="text-blue">₹10</span>
+                      </div>
+                      <a href="Edit">
+                        <mat-icon>edit</mat-icon>
+                      </a>
+                    </div>
+                  </a>
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item>
+                  <div href="javascript:void(0);" class="playerlist-item">
+                    <div>
+                      Qty: 15
+                    </div>
+                    <div class="text-grey text-right">
+                      <div class="text-grey text-right">
+                        <div class="total-price">
+                          <span class="text-blue"><strong>₹130</strong></span>
+                          <mat-icon>info</mat-icon>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </mat-list-item>
+
+              </mat-list>
+            </div>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
     </div>
   </mat-tab>
   <mat-tab>
@@ -190,20 +242,86 @@
         <mat-expansion-panel>
           <mat-expansion-panel-header>
             <mat-panel-title>
-              #orderID12319842346
+              orderID:-12319842346
             </mat-panel-title>
           </mat-expansion-panel-header>
-          <p>This is the primary content of the panel.</p>
+          <table>
+            <tr>
+              <td>Pickup Date</td>
+              <td>08/08/2020</td>
+            </tr>
+            <tr>
+              <td>Pickup Time</td>
+              <td>1:00PM - 2:00PM</td>
+            </tr>
+            <tr>
+              <td>Pickup Address</td>
+              <td>B-21, Vasundhara society, O.P. road, 390001</td>
+            </tr>
+            <tr>
+              <td>Delivery Date</td>
+              <td>08/08/2020</td>
+            </tr>
+            <tr>
+              <td>Delivery Time</td>
+              <td>1:00PM - 2:00PM</td>
+            </tr>
+            <tr>
+              <td>Delivery Address</td>
+              <td>B-21, Vasundhara society, O.P. road, 390001</td>
+            </tr>
+            <tr>
+              <td>Item</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td>₹100</td>
+            </tr>
+          </table>
         </mat-expansion-panel>
 
 
         <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
           <mat-expansion-panel-header>
             <mat-panel-title>
-              #orderID12319842346
+              OrderID:-12319842346
             </mat-panel-title>
           </mat-expansion-panel-header>
-          <p>I'm visible because I am open</p>
+          <table>
+            <tr>
+              <td>Pickup Date</td>
+              <td>08/08/2020</td>
+            </tr>
+            <tr>
+              <td>Pickup Time</td>
+              <td>1:00PM - 2:00PM</td>
+            </tr>
+            <tr>
+              <td>Pickup Address</td>
+              <td>B-21, Vasundhara society, O.P. road, 390001</td>
+            </tr>
+            <tr>
+              <td>Delivery Date</td>
+              <td>08/08/2020</td>
+            </tr>
+            <tr>
+              <td>Delivery Time</td>
+              <td>1:00PM - 2:00PM</td>
+            </tr>
+            <tr>
+              <td>Delivery Address</td>
+              <td>B-21, Vasundhara society, O.P. road, 390001</td>
+            </tr>
+            <tr>
+              <td>Item</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td>₹100</td>
+            </tr>
+          </table>
         </mat-expansion-panel>
       </mat-accordion>
     </div>
@@ -212,5 +330,6 @@
 </mat-tab-group>
 
 <div class="floating-button right">
-  <button mat-raised-button color="primary" routerLink="/home/checkout">Checkout (₹400) &gt;</button>
+  <button mat-raised-button color="primary" routerLink="/home/checkout">Checkout (₹130) <mat-icon>chevron_right
+    </mat-icon></button>
 </div>

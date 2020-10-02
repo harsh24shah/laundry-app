@@ -1,0 +1,33 @@
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+            Waghodiya road  
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>B-23, Payas park, Waghodiya road, parivar, vadodara 390019</p>
+    <div>
+      <button mat-raised-button class="action-button" routerLink="/home/profile/update-address">Edit</button>
+      <button mat-raised-button color="primary" class="action-button">Set as default</button>
+    </div>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel [expanded]="true">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        <mat-icon class="size-14 text-blue">done</mat-icon>&nbsp;
+        New VIP ROAD
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>34 - Earth ICON, Khodiyar nagar char rasta, vadodara.</p>
+    <div>
+      <button mat-raised-button class="action-button" routerLink="/home/profile/update-address">Edit</button>
+    </div>
+  </mat-expansion-panel>
+
+</mat-accordion>
+
+<div class="floating-button right">
+  <button mat-raised-button routerLink="/home/profile/update-address"  color="primary">Add new Address</button>
+</div>
+ 

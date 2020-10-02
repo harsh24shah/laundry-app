@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PageTitleService } from 'src/app/shared/services/pagetitle.service';
 
 @Component({
   selector: 'app-preferences',
@@ -7,15 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PreferencesPage implements OnInit {
 
-  constructor() { }
+  constructor(private pageTitleService: PageTitleService) { }
 
   ngOnInit() {
+    this.pageTitleService.changeTitlle('Order Preferences');
   }
+
   categories = [
-    {value: 'cleaning', viewValue: 'Cash on Delivery'},
-    {value: 'load-wash', viewValue: 'UPI'},
-    {value: 'g-clean', viewValue: 'Credit card'},
-    {value: 'wash-iron', viewValue: 'Debit card'},
-    {value: 'ironing', viewValue: 'Net Banking'}
+    { value: 'load-wash', viewValue: 'UPI' },
+    { value: 'g-clean', viewValue: 'Credit card' },
+    { value: 'wash-iron', viewValue: 'Debit card' },
+    { value: 'ironing', viewValue: 'Net Banking' },
+    { value: 'cleaning', viewValue: 'Cash on Delivery' }
   ]
 }

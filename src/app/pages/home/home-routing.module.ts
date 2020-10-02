@@ -24,8 +24,24 @@ const routes: Routes = [
         loadChildren: () => import('./categories/categories.module').then(m => m.CategoriesPageModule)
       },
       {
+        path: 'checkout',
+        loadChildren: () => import('./checkout/checkout.module').then(m => m.CheckoutPageModule)
+      },
+      {
         path: 'profile',
-        loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
+        loadChildren: () => import('./profile/profile.module').then(m => m.ProfilePageModule)
+      },
+      {
+        path: 'profile/addresses',
+        loadChildren: () => import('./profile/addresses/addresses.module').then(m => m.AddressesPageModule)
+      },
+      {
+        path: 'profile/update-address',
+        loadChildren: () => import('./profile/address-form/address-form.module').then(m => m.AddressFormPageModule)
+      },
+      {
+        path: 'profile/user-preference',
+        loadChildren: () => import('./profile/user-preference/user-preference.module').then(m => m.UserPreferencePageModule)
       },
       {
         path: '',
@@ -34,7 +50,7 @@ const routes: Routes = [
       }
     ]
   }
- 
+
 ]
 
 @NgModule({

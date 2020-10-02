@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 
+import { PageTitleService } from 'src/app/shared/services/pagetitle.service';
 import { TogglemenuService } from 'src/app/shared/services/togglemenu.service';
 
 @Component({
@@ -9,6 +10,14 @@ import { TogglemenuService } from 'src/app/shared/services/togglemenu.service';
 })
 export class HomePage {
 
-  constructor(private togglemenuService: TogglemenuService) { }
+  constructor(private togglemenuService: TogglemenuService, private pageTitleService: PageTitleService) { }
 
+
+  ngOnInit() {
+    this.pageTitleService.changeTitlle('Dhulaiwala');
+  }
+
+  changeOfRoutes(){
+    this.togglemenuService.setSideBarToggle(false);
+  }
 }

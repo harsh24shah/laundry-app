@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PageTitleService } from '../../services/pagetitle.service';
 
 import { TogglemenuService } from '../../services/togglemenu.service';
 
@@ -9,7 +10,7 @@ import { TogglemenuService } from '../../services/togglemenu.service';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor(public togglemenuService: TogglemenuService) { }
+  constructor(public togglemenuService: TogglemenuService, public pageTitleService: PageTitleService) { }
 
   ngOnInit() {}
 

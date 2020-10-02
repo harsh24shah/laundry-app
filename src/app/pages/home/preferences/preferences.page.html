@@ -21,11 +21,11 @@
             <div class="address-inline">
              <mat-icon>room</mat-icon>
 
-              <span class="strong text-blue">B-23 House Name, Society name, landmark title, City name, State,
+              <span class="text-blue">B-23 House Name, Society name, landmark title, City name, State,
                 390025</span>
             </div>
             <span>
-              <a href="javascript:void(0);">Change</a>
+              <a routerLink="/home/profile/update-address">Change</a>
             </span>
           </div>
         </div>
@@ -38,11 +38,11 @@
           <div class="address">
             <div class="address-inline">
               <mat-icon>room</mat-icon>
-              <span class="strong text-blue">B-23 House Name, Society name, landmark title, City name, State,
+              <span class="text-blue">B-23 House Name, Society name, landmark title, City name, State,
                 390025</span>
             </div>
             <span>
-              <a href="javascript:void(0);">Change</a>
+              <a routerLink="/home/profile/update-address">Change</a>
             </span>
           </div>
         </div>
@@ -64,9 +64,9 @@
           <div class="address">
             <div class="address-inline align-items-center">
               <mat-icon>event</mat-icon>
-              <span class="strong text-blue">02/08/2020</span>
+              <span class="text-blue">02/08/2020</span>
               <mat-form-field appearance="fill">
-                <input class="strong text-blue" matInput [matDatepicker]="picker" hidden>
+                <input class="text-blue" matInput [matDatepicker]="picker" hidden>
                 <mat-datepicker #picker></mat-datepicker>
               </mat-form-field>
             </div>
@@ -79,7 +79,7 @@
           <div class="address">
             <div class="address-inline align-items-center">
               <mat-icon>schedule</mat-icon>
-              <span class="strong text-blue">12:00 PM - 2:00 PM</span>
+              <span class="text-blue">12:00 PM - 2:00 PM</span>
             </div>
             <span>
               <a href="javascript:void(0);">Change</a>
@@ -95,7 +95,7 @@
           <div class="address">
             <div class="address-inline align-items-center">
               <mat-icon>event</mat-icon>
-              <span class="strong text-blue">02/08/2020</span>
+              <span class="text-blue">02/08/2020</span>
             </div>
             <span>
               <a href="javascript:void(0);">Change</a>
@@ -105,7 +105,7 @@
           <div class="address">
             <div class="address-inline align-items-center">
               <mat-icon>schedule</mat-icon>
-              <span class="strong text-blue">5:00 PM - 7:00 PM</span>
+              <span class="text-blue">5:00 PM - 7:00 PM</span>
             </div>
             <span>
               <a href="javascript:void(0);">Change</a>
@@ -150,5 +150,5 @@
 </div>
 
 <div class="floating-button right">
-  <button mat-raised-button color="primary" routerLink="/home/cart" >Confirm (₹400) &gt;</button>
+  <button mat-raised-button color="primary" routerLink="/home/cart" >Confirm (₹96)<mat-icon>chevron_right</mat-icon></button>
 </div>

@@ -2,17 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { PageTitleService } from 'src/app/shared/services/pagetitle.service';
 
 @Component({
-  selector: 'app-categories',
-  templateUrl: './categories.page.html',
-  styleUrls: ['./categories.page.scss'],
+  selector: 'app-addresses',
+  templateUrl: './addresses.page.html',
+  styleUrls: ['./addresses.page.scss'],
 })
-export class CategoriesPage implements OnInit {
-
+export class AddressesPage implements OnInit {
 
   constructor(private pageTitleService: PageTitleService) { }
 
   ngOnInit() {
-    this.pageTitleService.changeTitlle('Categories');
+    this.pageTitleService.changeTitlle('Addresses');
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PageTitleService } from 'src/app/shared/services/pagetitle.service';
 
 @Component({
   selector: 'app-profile',
@@ -11,9 +12,11 @@ export class ProfilePage implements OnInit {
     { value: 'mp', viewValue: 'Maharastra' },
     { value: 'rj', viewValue: 'Rajasthan' }
   ];
-  constructor() { }
+
+  constructor(private pageTitleService: PageTitleService) { }
 
   ngOnInit() {
+    this.pageTitleService.changeTitlle('Profile');
   }
 
 }
