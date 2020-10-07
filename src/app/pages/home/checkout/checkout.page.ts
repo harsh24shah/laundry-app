@@ -12,5 +12,6 @@ export class CheckoutPage implements OnInit {
 
   ngOnInit() {
     this.pageTitleService.changeTitlle('Checkout');
+    this.pageTitleService.showBackIcon(false);
   }
 }

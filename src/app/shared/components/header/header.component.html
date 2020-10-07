@@ -1,21 +1,18 @@
 <header>
-  <div class="menu-button">
+  <!-- <div class="menu-button" [class.hidemenu]="pageTitleService.backIcon$ | async">
     <a (click)="togglemenuService.setSideBarToggle(true)">
       <span></span>
       <span></span>
       <span></span>
     </a>
-  </div>
+  </div> -->
+  <mat-icon (click)="goBack()" *ngIf="pageTitleService.backIcon$ | async" class="text-white">keyboard_backspace</mat-icon>
+
   <h1 class="page-title">{{pageTitleService.pageTitle$ | async}}</h1>
   <div>
-    <a routerLink="/home/cart" routerLinkActive="active" href="javascript:void(0);" class="notify-button text-white">
-      <mat-icon>local_laundry_service</mat-icon>
-      <span class="notification-count">4</span>
-    </a>
     <a routerLink="/dashboard/notification" routerLinkActive="active" href="javascript:void(0);" class="fs26 text-white notify-button">
-      <mat-icon>notifications</mat-icon>
+      <mat-icon class="material-icons-outlined">notifications</mat-icon>
       <span class="notification-count">12</span>
     </a>
   </div>
-
 </header>

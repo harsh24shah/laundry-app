@@ -13,6 +13,7 @@ export class AddressFormPage implements OnInit {
 
   ngOnInit() {
     this.pageTitleService.changeTitlle('Change Address');
+    this.pageTitleService.showBackIcon(true);
   }
 
 }

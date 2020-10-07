@@ -8,6 +8,7 @@ import { HomePageRoutingModule } from './home-routing.module';
 import { MaterialModules } from 'src/app/shared/material-module';
 import { SidemenuComponent } from 'src/app/shared/components/sidemenu/sidemenu.component';
 import { HeaderComponent } from 'src/app/shared/components/header/header.component';
+import { TabNavComponent } from 'src/app/shared/components/tab-nav/tab-nav.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { HeaderComponent } from 'src/app/shared/components/header/header.compone
   declarations: [
     HomePage,
     SidemenuComponent,
-    HeaderComponent
+    HeaderComponent,
+    TabNavComponent
   ]
 })
 export class HomePageModule { }

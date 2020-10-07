@@ -15,6 +15,7 @@ export class HomePage {
 
   ngOnInit() {
     this.pageTitleService.changeTitlle('Dhulaiwala');
+    this.pageTitleService.showBackIcon(false);
   }
 
   changeOfRoutes(){

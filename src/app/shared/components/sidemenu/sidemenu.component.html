@@ -1,70 +1,73 @@
-<div class="profile">
-  <a href="javascript:void(0);" class="profile-image" routerLink="/home/profile" routerLinkActive="active">
-    <img src="https://dummyimage.com/180x180/b8b8b8/000000">
-  </a>
+<mat-icon class="menu-back" (click)="togglemenuService.setSideBarToggle(false)">keyboard_backspace</mat-icon>
+
+<div class="profile"> 
   <div class="profile-name-wrapper">
-    <span class="profile-name">Harsh Shah</span>
-    <span class="profile-location">
-      <mat-icon>room</mat-icon>
-      <span>Waghodia Road</span>
-    </span>
+    <div class="main-logo">
+      <img src="../../../../assets/images/logo.png" class="for-mobile" />
+      <img src="../../../../assets/images/logo-white.png" class="for-desktop" />
+    </div> 
   </div>
 </div>
 <nav>
   <ul>
     <li>
       <a routerLink="/home/profile" routerLinkActive="active">
-        <mat-icon>person</mat-icon>
+        <mat-icon class="material-icons-outlined">person</mat-icon>
         <span>My Profile</span>
-      </a>
-    </li>
-    <li>
-      <a routerLink="/home/categories" routerLinkActive="active">
-        <mat-icon>local_laundry_service</mat-icon>
-        <span>Services</span>
+        <mat-icon>navigate_next</mat-icon>
       </a>
     </li>
     <li>
       <a routerLink="/home/profile/addresses" routerLinkActive="active">
-        <mat-icon>room</mat-icon>
-        <span>Addresses</span>
+        <mat-icon class="material-icons-outlined">room</mat-icon>
+        <span>Address</span>
+        <mat-icon>navigate_next</mat-icon>
       </a>
     </li>
     <li>
-      <a routerLink="/home/cart" routerLinkActive="active">
-        <mat-icon>shopping_cart</mat-icon>
-        <span>Orders</span>
-      </a>
+
     </li>
     <li>
       <a routerLink="/home/checkout">
-        <mat-icon>payment</mat-icon>
+        <mat-icon class="material-icons-outlined">payment</mat-icon>
         <span>Payment</span>
+        <mat-icon>navigate_next</mat-icon>
       </a>
     </li>
-    <li> 
+    <li>
       <a href="">
-        <mat-icon>share</mat-icon>
+        <mat-icon class="material-icons-outlined">note</mat-icon>
+        <span>Pickup & Delivery Notes</span>
+        <mat-icon>navigate_next</mat-icon>
+      </a>
+    </li>
+    <li>
+      <a href="">
+        <mat-icon class="material-icons-outlined">share</mat-icon>
         <span>Share</span>
+        <mat-icon>navigate_next</mat-icon>
       </a>
     </li>
     <li>
       <a href="">
-        <mat-icon>info</mat-icon>
-        <span>FAQs</span>
-      </a>
-    </li>
-    <li>
-      <a href="">
-        <mat-icon>phone</mat-icon>
-        <span>Contact us</span>
-      </a>
-    </li>
-    <li>
-      <a href="">
-        <mat-icon>power_settings_new</mat-icon>
+        <mat-icon class="material-icons-outlined">power_settings_new</mat-icon>
         <span>Logout</span>
+        <mat-icon>navigate_next</mat-icon>
       </a>
     </li>
   </ul>
+  <div class="nav-bottom">
+    <div>
+      <a href="http://www.cleantechlaundry.com/contact.php" target="_blank">
+        <mat-icon class="material-icons-outlined">info</mat-icon>
+        <span>FAQs</span>
+      </a>
+    </div>
+    <div>
+      <a href="tel:+919409480005">
+        <mat-icon class="material-icons-outlined">phone</mat-icon>
+        <span>Call us</span>
+      </a>
+    </div>
+  </div>
 </nav>

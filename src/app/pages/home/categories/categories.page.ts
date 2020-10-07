@@ -12,7 +12,8 @@ export class CategoriesPage implements OnInit {
   constructor(private pageTitleService: PageTitleService) { }
 
   ngOnInit() {
-    this.pageTitleService.changeTitlle('Categories');
+    this.pageTitleService.changeTitlle('Page title');
+    this.pageTitleService.showBackIcon(false);
   }
 
 }

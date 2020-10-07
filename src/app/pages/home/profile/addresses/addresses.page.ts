@@ -12,6 +12,7 @@ export class AddressesPage implements OnInit {
 
   ngOnInit() {
     this.pageTitleService.changeTitlle('Addresses');
+    this.pageTitleService.showBackIcon(true);
   }
 
 }

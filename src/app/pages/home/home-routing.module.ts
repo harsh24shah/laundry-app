@@ -44,13 +44,16 @@ const routes: Routes = [
         loadChildren: () => import('./profile/user-preference/user-preference.module').then(m => m.UserPreferencePageModule)
       },
       {
+        path: 'pricing',
+        loadChildren: () => import('./pricing/pricing.module').then( m => m.PricingPageModule)
+      },
+      {
         path: '',
         pathMatch: 'full',
         redirectTo: '/home/categories'
       }
     ]
   }
-
 ]
 
 @NgModule({

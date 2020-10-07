@@ -13,6 +13,7 @@ export class UserPreferencePage implements OnInit {
 
   ngOnInit() {
     this.pageTitleService.changeTitlle('User Preferences');
+    this.pageTitleService.showBackIcon(true);
   }
 
 }

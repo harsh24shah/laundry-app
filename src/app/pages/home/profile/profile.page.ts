@@ -17,6 +17,7 @@ export class ProfilePage implements OnInit {
 
   ngOnInit() {
     this.pageTitleService.changeTitlle('Profile');
+    this.pageTitleService.showBackIcon(false);
   }
 
 }

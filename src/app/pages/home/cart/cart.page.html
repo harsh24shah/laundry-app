@@ -3,7 +3,7 @@
     <ng-template mat-tab-label>
       Current Orders
     </ng-template>
-    <div class="tab-content-wrap card" style="padding: 8px;">
+    <div class="tab-content-wrap card">
       <mat-accordion class="order-accordian">
         <mat-expansion-panel [expanded]="true">
           <mat-expansion-panel-header>
@@ -16,7 +16,7 @@
 
                   <div class="order-time">
                     <span>
-                      <svg class="icon size-30 icon-black">
+                      <svg class="icon size-20 icon-black">
                         <use xlink:href="../assets/icons/svg-sprite.svg#pickup"></use>
                       </svg>
                     </span>
@@ -29,7 +29,7 @@
                   </div>
                   <div class="order-time">
                     <span>
-                      <svg class="icon size-30 icon-black">
+                      <svg class="icon size-20 icon-black">
                         <use xlink:href="../assets/icons/svg-sprite.svg#pickup"></use>
                       </svg>
                     </span>
@@ -45,13 +45,10 @@
             </mat-panel-title>
           </mat-expansion-panel-header>
 
-
-
-
-          <div class="d-flex text-center service-type-buttons" style="padding-top: 16px;">
-            <h1>
+          <div class="d-flex text-center service-type-buttons">
+            <h4>
               Dry Cleaning
-            </h1>
+            </h4>
           </div>
 
           <div class="timeline">
@@ -81,7 +78,7 @@
             </div>
           </div>
 
-          <div class="tab-content-wrap card">
+          <div class="tab-content-wrap">
             <div class="list-view-wrapper">
               <mat-list>
                 <mat-list-item>
@@ -237,7 +234,7 @@
     <ng-template mat-tab-label>
       Past orders
     </ng-template>
-    <div class="tab-content-wrap card" style="padding: 8px;">
+    <div class="tab-content-wrap card">
       <mat-accordion>
         <mat-expansion-panel>
           <mat-expansion-panel-header>

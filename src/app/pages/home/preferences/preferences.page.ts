@@ -12,6 +12,7 @@ export class PreferencesPage implements OnInit {
 
   ngOnInit() {
     this.pageTitleService.changeTitlle('Order Preferences');
+    this.pageTitleService.showBackIcon(true);
   }
 
   categories = [

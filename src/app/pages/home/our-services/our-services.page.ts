@@ -27,7 +27,8 @@ export class OurServicesPage implements OnInit {
   constructor(private pageTitleService: PageTitleService) { }
 
   ngOnInit() {
-    this.pageTitleService.changeTitlle('Services');
+    this.pageTitleService.changeTitlle('Page title');
+    this.pageTitleService.showBackIcon(true);
   }
 
 }

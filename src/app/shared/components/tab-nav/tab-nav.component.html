@@ -1,0 +1,34 @@
+<div class="tabnav-wrapper">
+  <div class="tab-item" routerLink="/home/categories" routerLinkActive="active">
+    <span>
+      <mat-icon class="material-icons-outlined">local_laundry_service</mat-icon>
+    </span>
+    <div>
+      Book
+    </div>
+  </div>
+  <div class="tab-item" routerLink="/home/cart" routerLinkActive="active">
+    <span>
+      <mat-icon class="material-icons-outlined">shopping_cart</mat-icon>
+    </span>
+    <div>
+      My washes
+    </div>
+  </div>
+  <div class="tab-item" routerLink="/home/pricing" routerLinkActive="active">
+    <span>
+      <mat-icon class="material-icons-outlined">attach_money</mat-icon>
+    </span>
+    <div>
+      pricing
+    </div>
+  </div>
+  <div class="tab-item" (click)="togglemenuService.setSideBarToggle(true)">
+    <span>
+      <mat-icon class="material-icons-outlined">settings</mat-icon>
+    </span>
+    <div>
+      More 
+    </div>
+  </div>
+</div>

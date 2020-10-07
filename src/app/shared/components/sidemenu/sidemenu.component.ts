@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PageTitleService } from '../../services/pagetitle.service';
+import { TogglemenuService } from '../../services/togglemenu.service';
 
 @Component({
   selector: 'app-sidemenu',
@@ -8,7 +9,10 @@ import { PageTitleService } from '../../services/pagetitle.service';
 })
 export class SidemenuComponent implements OnInit {
 
-  constructor(private pageTitleService: PageTitleService) { }
+  constructor(
+    public togglemenuService: TogglemenuService,
+    private pageTitleService: PageTitleService
+    ) { }
 
   ngOnInit() {
   }
