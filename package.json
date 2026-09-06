@@ -13,15 +13,15 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~12.2.17",
-    "@angular/cdk": "^11.2.13",
-    "@angular/common": "~12.2.17",
-    "@angular/core": "~12.2.17",
-    "@angular/forms": "~12.2.17",
-    "@angular/material": "^11.2.13",
-    "@angular/platform-browser": "~12.2.17",
-    "@angular/platform-browser-dynamic": "~12.2.17",
-    "@angular/router": "~12.2.17",
+    "@angular/animations": "~13.4.0",
+    "@angular/cdk": "^12.2.13",
+    "@angular/common": "~13.4.0",
+    "@angular/core": "~13.4.0",
+    "@angular/forms": "~13.4.0",
+    "@angular/material": "^12.2.13",
+    "@angular/platform-browser": "~13.4.0",
+    "@angular/platform-browser-dynamic": "~13.4.0",
+    "@angular/router": "~13.4.0",
     "@capacitor/core": "2.4.2",
     "@ionic-native/core": "^5.0.0",
     "@ionic-native/splash-screen": "^5.0.0",
@@ -34,9 +34,9 @@
   "devDependencies": {
     "@angular-devkit/build-angular": "~12.2.18",
     "@angular/cli": "~12.2.18",
-    "@angular/compiler": "~12.2.17",
-    "@angular/compiler-cli": "~12.2.17",
-    "@angular/language-service": "~12.2.17",
+    "@angular/compiler": "~13.4.0",
+    "@angular/compiler-cli": "~13.4.0",
+    "@angular/language-service": "~13.4.0",
     "@capacitor/cli": "2.4.2",
     "@ionic/angular-toolkit": "^2.3.0",
     "@types/jasmine": "~3.6.0",
@@ -53,7 +53,7 @@
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
-    "typescript": "~4.3.5"
+    "typescript": "~4.6.4"
   },
   "description": "An Ionic project"
 }
