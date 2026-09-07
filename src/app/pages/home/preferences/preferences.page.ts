@@ -7,6 +7,7 @@ import { PageTitleService } from 'src/app/shared/services/pagetitle.service';
   styleUrls: ['./preferences.page.scss'],
 })
 export class PreferencesPage implements OnInit {
+  selected = '';
 
   constructor(private pageTitleService: PageTitleService) { }
 

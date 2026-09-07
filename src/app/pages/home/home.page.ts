@@ -10,7 +10,7 @@ import { TogglemenuService } from 'src/app/shared/services/togglemenu.service';
 })
 export class HomePage {
 
-  constructor(private togglemenuService: TogglemenuService, private pageTitleService: PageTitleService) { }
+  constructor(public togglemenuService: TogglemenuService, private pageTitleService: PageTitleService) { }
 
 
   ngOnInit() {

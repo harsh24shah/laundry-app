@@ -7,6 +7,7 @@ import { PageTitleService } from 'src/app/shared/services/pagetitle.service';
   styleUrls: ['./cart.page.scss'],
 })
 export class CartPage implements OnInit {
+  panelOpenState = false;
 
   constructor(private pageTitleService: PageTitleService) { }
 

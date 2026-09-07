@@ -1,5 +1,7 @@
+@use './variables' as vars;
+
 .text-blue {
-  color: $blue;
+  color: vars.$blue;
 }
 
 .text-white {
@@ -7,15 +9,15 @@
 }
 
 .bg-blue {
-  background: $blue;
+  background: vars.$blue;
 }
 
 .bg-red {
-  background: $red;
+  background: vars.$red;
 }
 
 .text-red {
-  color: $red;
+  color: vars.$red;
 }
 
 hr {
@@ -90,12 +92,12 @@ small,
 }
 
 .bg-white {
-  background: $white;
+  background: vars.$white;
 }
 
 label {
   font-weight: 500;
-  color: $blue;
+  color: vars.$blue;
   margin-bottom: 8px;
   display: block;
 }
@@ -105,12 +107,12 @@ label {
 }
 
 a {
-  color: $link-color;
+  color: vars.$link-color;
   text-decoration: none;
 
   &:focus,
   &:active {
-    color: $link-color;
+    color: vars.$link-color;
   }
 }
 
@@ -221,7 +223,7 @@ a {
   }
 
   &.icon-blue {
-    fill: $blue;
+    fill: vars.$blue;
   }
 }
 
@@ -232,49 +234,49 @@ a {
 
   &:hover {
     .star polygon {
-      fill: $star-active !important;
+        fill: vars.$star-active !important;
     }
   }
 
   .star {
     width: 16px;
     height: 16px;
-    fill: $star-inactive;
+      fill: vars.$star-inactive;
   }
 
   &[data-stars] {
     .star {
-      fill: $star-active;
+        fill: vars.$star-active;
     }
   }
 
   &[data-stars="1"] {
     .star:nth-child(1)~.star {
-      fill: $star-inactive;
+        fill: vars.$star-inactive;
     }
   }
 
   &[data-stars="2"] {
     .star:nth-child(2)~.star {
-      fill: $star-inactive;
+        fill: vars.$star-inactive;
     }
   }
 
   &[data-stars="3"] {
     .star:nth-child(3)~.star {
-      fill: $star-inactive;
+        fill: vars.$star-inactive;
     }
   }
 
   &[data-stars="4"] {
     .star:nth-child(4)~.star {
-      fill: $star-inactive;
+        fill: vars.$star-inactive;
     }
   }
 
   &[data-stars="5"] {
     .star:nth-child(5)~.star {
-      fill: $star-inactive;
+        fill: vars.$star-inactive;
     }
   }
 }
@@ -291,11 +293,11 @@ a {
 
     button:before {
       font-size: 12px;
-      color: lighten(desaturate(adjust-hue($blue, 1), 63.91), 50.2);
+      color: lighten(desaturate(adjust-hue(vars.$blue, 1), 63.91), 50.2);
     }
 
     &.slick-active button:before {
-      color: $red;
+      color: vars.$red;
     }
   }
 }
